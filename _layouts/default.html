@@ -3,17 +3,17 @@
 <head>
 	<title>My first ..........</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/Css/style.css">
 </head>
 <body>
 	<header>
-		<strong>My first .....</strong>
-		<nav>
-			<ul>
-				<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="{{site.baseurl}}/news.html">_News</a></li>
-			</ul>
-		</nav>
+		<h1>My first .....</h1>
+		{% include nav.html navclass='nav-top'%}
 	</header>
     {{content}}
+    <footer>
+    	{% include nav.html navclass='nav-bottom'%}
+    	<small><i>Have recently published</i></small>
+    </footer>
 </body>
 </html>

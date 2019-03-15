@@ -1,4 +1,12 @@
 ---
 layout: default
 ---
-<h1>News</h1>
+<h1>News here</h1>
+<ul>
+	{% for news in site.posts %}
+	<li>
+		<a href="news.url">news.title</a>
+		<p></p>
+	</li>
+	{% endfor %}
+</ul>
