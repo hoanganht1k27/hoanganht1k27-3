@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /hoanganht1k27-3
+exclude: ['README.md']
