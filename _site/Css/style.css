@@ -7,13 +7,14 @@ h1 {
 }
 .nav{
 	list-style: none;
+	padding: 0;
 }
 .nav li{
 	display: inline-block;
-	padding: 10px;
 }
 .nav-top li{
 	border: 1px solid black;
+	padding: 10px;
 }
 .nav-top li a{
 	font-size: 20px;
@@ -22,4 +23,10 @@ h1 {
 .link2{
 	background-color: blue;
 	color: white;
+}
+.nav-bottom{
+    margin-top: 100px;
+}
+.nav-bottom li a{
+    font-style: italic;
 }
