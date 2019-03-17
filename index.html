@@ -2,13 +2,21 @@
 layout: default
 ---
     <h1>My first .......</h1>
-    <p>Let's work</p>
-    <p>hihihi</p>
+    <p>Let's work for her</p>
+    <h2>News-type</h2>
+    <ol class="wrapper-type-list">
+    	{% for type in site.categories.News-type %}
+    	<li>
+    		<a href="" class="type-list"><strong>{{type.title}}</strong></a>
+    		<p>{{type.content}}</p>
+    	</li>
+    	{% endfor %}
+    </ol>
 <h1>Recently-news</h1>
 <ul>
 	{% for post in site.categories.recently-news %}
 	<li>
-		<a href="{{ post.url }}">{{post.title}}</a>
+		<a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a>
 		<p>{{post.meta}}</p>
 	</li>
 	{% endfor %}

@@ -3,9 +3,9 @@ layout: default
 ---
 <strong>News</strong>
 <nav>
-	<ul>
-		<li><a href="{{site.baseurl}}/news.html" class="{% if page.url=='/news.html' %}link2{% endif %}">News</a></li>
-		<li><a href="{{site.baseurl}}/recently-news.html" class="{% if page.url=='/recently-news.html' %}link2{% endif %}">Recently-news</a></li>
+	<ul class="nav-wrapper">
+		<li><a href="{{site.baseurl}}/news.html" class="{% if page.url=='/news.html' %}link2{% endif %} link-list">News</a></li>
+		<li><a href="{{site.baseurl}}/recently-news.html" class="{% if page.url=='/recently-news.html' %}link2{% endif %} link-list">Recently-news</a></li>
 	</ul>
 </nav>
 {{content}}
