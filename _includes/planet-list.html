@@ -1,0 +1,13 @@
+<ul>
+	{% for car in site.pages %}
+	{% if car.category ==include.type %}
+	<li>
+		<a href="{{site.baseurl}}{{car.url}}">
+		    <h3>{{car.title}}</h3>
+		    <p>{{car.meta}}</p>
+		    <img src="{{site.baseurl}}/image/{{car.image}}" class="image" alt="Photo of {{car.title}}">
+		</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>

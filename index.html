@@ -7,7 +7,7 @@ layout: default
     <ol class="wrapper-type-list">
     	{% for type in site.categories.News-type %}
     	<li>
-    		<a href="" class="type-list"><strong>{{type.title}}</strong></a>
+    		<a href="{{site.baseurl}}/Planets/{{type.folder}}/" class="type-list"><strong>{{type.title}}</strong></a>
     		<p>{{type.content}}</p>
     	</li>
     	{% endfor %}
